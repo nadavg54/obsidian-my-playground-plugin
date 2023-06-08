@@ -35,14 +35,6 @@ export default class UserInputPlugin extends Plugin {
       id: 'add-mising-daily-notes',
       name: 'add missing daily notes',
       callback: () => {
-        const dailyNotesFolder = this.app.vault.getAbstractFileByPath(this.settings.dailyNotesPath) as TFolder;
-        
-        const currentDate = new Date();
-        const monthAgo = currentDate.addMonths
-
-        // dailyNotesFolder.children.
-        
-        new Notice("path object is " + dailyNotesFolder?.vault);
         new Notice("daily notes path is " + this.settings.dailyNotesPath);
       },
     });
